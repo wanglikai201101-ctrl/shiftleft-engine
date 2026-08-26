@@ -1,0 +1,19 @@
+[project]
+name = "engineering-knowledge-base"
+version = "0.1.0"
+description = "面向 AI 辅助测试的结构化工程文档体系与自动化工具链"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.0.0"]
+
+[project.scripts]
+kb = "packages.cli.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["packages*"]

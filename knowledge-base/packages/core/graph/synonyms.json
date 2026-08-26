@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "description": "KB graph search synonym/alias mapping. Shared by TypeScript (graphify.cts) and Python (store.py) search layers.",
+  "aliases": {
+    "agent": ["智能体", "代理"],
+    "sandbox": ["沙箱", "沙盒", "隔离环境"],
+    "api": ["接口", "端点", "endpoint", "interface"],
+    "storage": ["存储", "数据库", "数据表", "table", "DB"],
+    "requirement": ["需求", "REQ", "feature", "功能"],
+    "page": ["页面", "前端", "frontend", "UI"],
+    "job": ["任务", "定时任务", "后台任务", "cron"],
+    "session": ["会话", "连接"],
+    "chat": ["对话", "conversation", "dialog", "聊天"],
+    "delete": ["删除", "remove", "清除"],
+    "build": ["构建", "编译", "create"],
+    "config": ["配置", "设置", "setting"],
+    "file": ["文件", "document"],
+    "instance": ["实例", "对象"],
+    "lifecycle": ["生命周期", "状态机"],
+    "mcp": ["MCP", "model context protocol"],
+    "websocket": ["WebSocket", "WS", "长连接", "实时通信"],
+    "user": ["用户", "账户", "account"],
+    "auth": ["认证", "鉴权", "authentication", "token"],
+    "log": ["日志", "记录", "logging"],
+    "list": ["列表", "查询", "获取列表"],
+    "create": ["创建", "新建", "添加", "add"],
+    "update": ["更新", "修改", "编辑", "edit"],
+    "get": ["获取", "查看", "读取", "read"],
+    "upload": ["上传", "导入", "import"],
+    "download": ["下载", "导出", "export"]
+  }
+}

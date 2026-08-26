@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "source_requirement": "{{SOURCE_REQ}}",
+    "test_point": "{{TP_ID}}",
+    "priority": "{{PRIORITY}}",
+    "mcp_tool": "executor:ui",
+    "generated_by": "gsd-kb-gen-tests-ui",
+    "generated_at": "{{TODAY}}",
+    "flow": false,
+    "flow_id": null,
+    "page_routes": []
+  },
+  "name": "{{UI_TEST_NAME}}",
+  "type": "ui",
+  "url": "{ENV-CONFIG.environment.frontend_url}{PAGE_ROUTE}",
+  "auth_system": "{{AUTH_SYSTEM}}",
+  "auth_role": "{{AUTH_ROLE}}",
+  "prerequisites": [
+    {{PREREQUISITES}}
+  ],
+  "steps": [
+    {{BUSINESS_STEPS}}
+  ],
+  "expected_results": [
+    {{EXPECTED_RESULTS}}
+  ],
+  "options": {
+    "max_retry": {{MAX_RETRY}}
+  }
+}

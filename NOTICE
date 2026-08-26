@@ -1,0 +1,59 @@
+ShiftLeft Engine — Copyright and Notices
+========================================
+
+Copyright (c) 2026 ShiftLeft Engine.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this software except in compliance with the License.
+You may obtain a copy of the License at
+https://www.apache.org/licenses/LICENSE-2.0
+
+This distribution contains portions derived from third-party open-source
+software. Per the Apache License, Version 2.0, Section 4(d), the following
+notices are preserved:
+
+gsd-core (https://github.com/open-gsd/gsd-core)
+------------------------------------------------
+Copyright (c) the gsd-core contributors
+
+This project's development-side skills (gsd-quick, gsd-debug, gsd-spike,
+gsd-secure-phase, gsd-code-review, gsd-new-project, gsd-fast,
+gsd-plan-phase, gsd-execute-phase) and related workflow/reference material
+are derived from gsd-core.
+
+研究/评审协议素材声明 (research / review contract material)
+----------------------------------------------------------
+本包研发技能的协议素材源自 gsd-core(MIT):
+- `release/release-skills/gsd-plan-phase/`、`release/release-skills/gsd-execute-phase/`
+  为 gsd-core 研发技能(plan-phase / execute-phase + 其 workflow/references 闭包)的自包含副本。
+- `release/contracts/plan-research-contract.md`、`release/contracts/plan-checker-contract.md`
+  分别改编自 gsd-core 的 `gsd-phase-researcher`、`gsd-plan-checker`(只读研究 / 执行前计划评审 agent)。
+  编排引擎以「契约模板」方式仿真 gsd-core 研发技能,协议素材为**文字化引用**(而非引用 agent 文件)。
+以上内容同样按 gsd-core 的 MIT License 随包再分发(见上方完整许可文本)。
+
+gsd-core is licensed under the MIT License:
+
+    MIT License
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
+gsd-core 构建快照 (embedded snapshot)
+------------------------------------
+本包内嵌 gsd-core(MIT)构建快照于 `release/gsd-core/`(bin 引擎 + workflows/references/templates/contexts),版本以 `release/gsd-core/VERSION` 为准。
+该快照为静态拷贝、随包再分发符合 MIT;需要新版本请自行向 gsd-core 上游(https://github.com/open-gsd/gsd-core)获取,本项目不追踪上游更新。

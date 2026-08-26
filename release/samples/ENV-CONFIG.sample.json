@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "generated_by": "gsd-kb-deploy",
+    "generated_at": "YYYY-MM-DD",
+    "module": "<module-name>",
+    "deploy_method": "local-dev | remote-connect | dockerfile | compose",
+    "account_method": "api_register"
+  },
+  "environment": {
+    "backend_url": "http://localhost:8000",
+    "frontend_url": "http://localhost:3000",
+    "frontend_login_path": "/auth/login",
+    "health_endpoint": "/health",
+    "api_prefix": "/api/v1"
+  },
+  "auth": {
+    "method": "bearer",
+    "system": "<system-name>",
+    "role": "admin",
+    "username": "<test-account-email>",
+    "password": "{{AUTH_PASSWORD}}",
+    "login_endpoint": "/api/v1/auth/login",
+    "login_body_field": "email",
+    "token_field": "data.access_token",
+    "register_endpoint": "/api/v1/auth/register",
+    "executor_system": "<executor-system-name>",
+    "envelope_index": "./ENVELOPE-INDEX.json"
+  },
+  "executor": {
+    "url": "{{EXECUTOR_URL}}",
+    "token": "{{EXECUTOR_TOKEN}}",
+    "control_url": "{{EXECUTOR_CONTROL_URL}}"
+  },
+  "i18n": {
+    "default_locale": "<default-locale>",
+    "locales_dir": "<rel-path-to-locales>",
+    "detection_strategy": "auto",
+    "detection_hints": ["<hint-1>", "<hint-2>"],
+    "notes": ""
+  },
+  "database": {
+    "type": "<postgres|mysql|sqlite|none>",
+    "container": null,
+    "connection": "<db-connection-string>"
+  },
+  "response_structure": {
+    "note": "FALLBACK 约定（非已验证事实）：每个端点真实 envelope 以 ENVELOPE-INDEX.json 为准；查无表项且无法探针时使用此约定必须标记 _unverified。",
+    "envelope_index": "./ENVELOPE-INDEX.json"
+  }
+}

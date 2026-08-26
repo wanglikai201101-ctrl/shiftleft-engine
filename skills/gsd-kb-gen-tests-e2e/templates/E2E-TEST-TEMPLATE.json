@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "source_requirements": ["{{SOURCE_REQS}}"],
+    "test_points_covered": ["{{TP_IDS}}"],
+    "priority": "{{PRIORITY}}",
+    "scenario_id": "{{SCENARIO_ID}}",
+    "mcp_tool": "executor:e2e",
+    "generated_by": "gsd-kb-gen-tests-e2e",
+    "generated_at": "{{TODAY}}",
+    "type": "{{TYPE}}"
+  },
+  "name": "{{E2E_NAME}}",
+  "type": "e2e",
+  "auth_system": "{{AUTH_SYSTEM}}",
+  "auth_role": "{{AUTH_ROLE}}",
+  "prerequisites": [
+    {
+      "type": "resource_exists",
+      "description": "{{PREREQ_DESC}} — 由 steps[] 首位 SETUP 种子步骤满足。端点/body 从 ENV-CONFIG 读取 seed.endpoint + seed.payload_template（示例：POST /api/v1/sandbox/build、name=qa-e2e-seed-<scenario_id>；pipeline 路径执行引擎忽略 prerequisites，造数据必须由 SETUP 步骤完成；ENV-CONFIG 未配置 seed.endpoint → 跳过 seed，本 block 不填）",
+      "params": {
+        "resource_type": "seed_resource",
+        "list_endpoint": "{{SEED_LIST_ENDPOINT}}",
+        "list_filter": "{{SEED_LIST_FILTER}}",
+        "extract_field": "{{SEED_EXTRACT_FIELD}}",
+        "satisfy_endpoint": "{{SEED_ENDPOINT}}",
+        "satisfy_body": "{{SEED_PAYLOAD_TEMPLATE}}",
+        "verify_field": "{{SEED_VERIFY_FIELD}}"
+      }
+    }
+  ],
+  "steps": [
+    "{{CHAIN_STEPS}}"
+  ],
+  "cleanup": [
+    "{{CLEANUP_STEPS}}"
+  ]
+}
