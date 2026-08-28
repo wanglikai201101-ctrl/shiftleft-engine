@@ -83,7 +83,7 @@
         </div>
 
         <div class="trace-canvas" data-trace-canvas>
-          <svg class="trace-lines" viewBox="0 0 650 480" role="img" aria-label="需求经过接口、数据、页面连接至测试">
+          <svg class="trace-lines" viewBox="0 0 650 480" role="img" aria-label="需求经过实现计划、数据连接至测试">
             <defs>
               <linearGradient id="trace-gradient" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stop-color="#63d9d0"></stop>
@@ -101,17 +101,14 @@
           <button class="trace-node node-req is-active" style="--x: 5%; --y: 8%" type="button" data-trace-node data-code="REQ" data-title="需求成为权威源" data-copy="每条需求拥有稳定身份，研发、文档和测试围绕同一业务目标展开。">
             <small>01 / SOURCE</small><strong>REQ</strong><span>需求</span>
           </button>
-          <button class="trace-node node-api" style="--x: 34%; --y: 25%" type="button" data-trace-node data-code="API" data-title="实现关系被识别" data-copy="自动关联需求与接口，记录参数、业务规则以及上下游调用关系。">
-            <small>02 / IMPLEMENT</small><strong>API</strong><span>接口</span>
+          <button class="trace-node node-api" style="--x: 34%; --y: 25%" type="button" data-trace-node data-code="PLAN" data-title="调查产出实现范围" data-copy="代码调查产出 Plan：识别接口、页面、配置、后台任务与权限等维度的范围及依赖关系。">
+            <small>02 / PLAN</small><strong>PLAN</strong><span>接口 · 页面 · 配置 · 任务 等</span>
           </button>
           <button class="trace-node node-data" style="--x: 63%; --y: 44%" type="button" data-trace-node data-code="DATA" data-title="数据读写可追溯" data-copy="从接口追溯到数据库、缓存和消息，定位字段级读写影响。">
             <small>03 / STORE</small><strong>DATA</strong><span>数据</span>
           </button>
-          <button class="trace-node node-page" style="--x: 31%; --y: 68%" type="button" data-trace-node data-code="PAGE" data-title="页面行为被连接" data-copy="记录页面调用的接口与可测试元素，使真实浏览器验证更加稳定。">
-            <small>04 / EXPERIENCE</small><strong>PAGE</strong><span>页面</span>
-          </button>
           <button class="trace-node node-test" style="--x: 75%; --y: 73%" type="button" data-trace-node data-code="TEST" data-title="验证范围自动形成" data-copy="根据需求与变更影响，生成 API、UI、E2E 测试用例和覆盖依据。">
-            <small>05 / VERIFY</small><strong>TEST</strong><span>测试</span>
+            <small>04 / VERIFY</small><strong>TEST</strong><span>测试</span>
           </button>
         </div>
 

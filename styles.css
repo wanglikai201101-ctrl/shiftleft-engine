@@ -518,10 +518,6 @@ a:focus-visible {
   font-weight: 600;
 }
 
-.node-page {
-  left: 21% !important;
-}
-
 .trace-readout {
   min-height: 110px;
   display: grid;
@@ -2065,7 +2061,6 @@ a:focus-visible {
 
   .node-api { left: 30% !important; }
   .node-data { left: 62% !important; }
-  .node-page { left: 13% !important; }
   .node-test { left: 69% !important; }
 
   .trace-readout {
