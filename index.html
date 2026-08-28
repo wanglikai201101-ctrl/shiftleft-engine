@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ShiftLeft Engine——需求驱动的测试左移工程平台。输入需求，剩下交给 AI：需求、代码、文档与测试串成一条持续更新的可信证据链，让 AI 交付可理解、可验证、可验收。">
+  <meta name="theme-color" content="#eaf1f8">
+
+  <!-- Open Graph / 分享卡片(图片已用 GitHub Pages 绝对地址,微信/社媒可渲染预览) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ShiftLeft Engine">
+  <meta property="og:title" content="ShiftLeft Engine · 需求驱动的测试左移工程平台">
+  <meta property="og:description" content="输入需求，剩下交给 AI。从需求到代码、图谱与测试用例自动留下可追溯的证据链，让 AI 交付可理解、可验证、可验收。">
+  <meta property="og:image" content="https://wanglikai201101-ctrl.github.io/shiftleft-engine/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ShiftLeft Engine 知识库与双向追溯图谱界面">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ShiftLeft Engine · 需求驱动的测试左移工程平台">
+  <meta name="twitter:description" content="输入需求，剩下交给 AI。需求、代码、文档与测试串成一条持续更新的可信证据链。">
+  <meta name="twitter:image" content="https://wanglikai201101-ctrl.github.io/shiftleft-engine/assets/og-image.png">
+
+  <title>ShiftLeft Engine · 需求驱动的测试左移工程平台</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stitch-theme.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="ShiftLeft Engine 首页">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+      <span class="brand-copy">
+        <b>SHIFTLEFT</b>
+        <small>ENGINE / 左移·来福</small>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#why">核心问题</a>
+      <a href="#engine">工作方式</a>
+      <a href="#scenarios">应用场景</a>
+      <a href="#proof">运行证据</a>
+      <a href="#partners">合作生态</a>
+    </nav>
+
+    <button class="header-cta" type="button" data-open-pilot>发起联合验证</button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span>AI DELIVERY INFRASTRUCTURE</span><b>产品介绍 · 2026</b></p>
+        <h1 id="hero-title">让 AI 不只会<br>写代码，<br><em>还要对交付负责。</em></h1>
+        <p class="hero-lead">ShiftLeft Engine 将需求、代码、文档与测试串成一条持续更新的可信链路，为 AI 研发补上“为什么这样做、影响了什么、如何证明做对了”。</p>
+
+        <div class="hero-actions">
+          <button class="button button-primary" type="button" data-open-pilot>
+            发起联合验证
+            <span aria-hidden="true">↗</span>
+          </button>
+          <a class="button button-ghost" href="#engine">查看工作方式 <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <dl class="hero-facts" aria-label="产品核心特征">
+          <div><dt>INPUT</dt><dd>需求 + 代码</dd></div>
+          <div><dt>ENGINE</dt><dd>知识 + 图谱</dd></div>
+          <div><dt>OUTPUT</dt><dd>用例 + 证据</dd></div>
+        </dl>
+      </div>
+
+      <div class="trace-console reveal" aria-label="需求追溯链交互演示">
+        <div class="console-topbar">
+          <span>LIVE TRACE / REQ-SL-001</span>
+          <span class="console-status"><i></i> CONNECTED</span>
+        </div>
+
+        <div class="trace-canvas" data-trace-canvas>
+          <svg class="trace-lines" viewBox="0 0 650 480" role="img" aria-label="需求经过接口、数据、页面连接至测试">
+            <defs>
+              <linearGradient id="trace-gradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#63d9d0"></stop>
+                <stop offset="52%" stop-color="#7390ff"></stop>
+                <stop offset="100%" stop-color="#bd70f5"></stop>
+              </linearGradient>
+            </defs>
+            <path class="trace-path trace-path-shadow" d="M86 78 C190 78 174 160 286 160 S370 254 472 254 S510 388 588 388"></path>
+            <path class="trace-path trace-path-active" d="M86 78 C190 78 174 160 286 160 S370 254 472 254 S510 388 588 388"></path>
+            <circle class="trace-pulse" r="6">
+              <animateMotion dur="4.6s" repeatCount="indefinite" path="M86 78 C190 78 174 160 286 160 S370 254 472 254 S510 388 588 388"></animateMotion>
+            </circle>
+          </svg>
+
+          <button class="trace-node node-req is-active" style="--x: 5%; --y: 8%" type="button" data-trace-node data-code="REQ" data-title="需求成为权威源" data-copy="每条需求拥有稳定身份，研发、文档和测试围绕同一业务目标展开。">
+            <small>01 / SOURCE</small><strong>REQ</strong><span>需求</span>
+          </button>
+          <button class="trace-node node-api" style="--x: 34%; --y: 25%" type="button" data-trace-node data-code="API" data-title="实现关系被识别" data-copy="自动关联需求与接口，记录参数、业务规则以及上下游调用关系。">
+            <small>02 / IMPLEMENT</small><strong>API</strong><span>接口</span>
+          </button>
+          <button class="trace-node node-data" style="--x: 63%; --y: 44%" type="button" data-trace-node data-code="DATA" data-title="数据读写可追溯" data-copy="从接口追溯到数据库、缓存和消息，定位字段级读写影响。">
+            <small>03 / STORE</small><strong>DATA</strong><span>数据</span>
+          </button>
+          <button class="trace-node node-page" style="--x: 31%; --y: 68%" type="button" data-trace-node data-code="PAGE" data-title="页面行为被连接" data-copy="记录页面调用的接口与可测试元素，使真实浏览器验证更加稳定。">
+            <small>04 / EXPERIENCE</small><strong>PAGE</strong><span>页面</span>
+          </button>
+          <button class="trace-node node-test" style="--x: 75%; --y: 73%" type="button" data-trace-node data-code="TEST" data-title="验证范围自动形成" data-copy="根据需求与变更影响，生成 API、UI、E2E 测试用例和覆盖依据。">
+            <small>05 / VERIFY</small><strong>TEST</strong><span>测试</span>
+          </button>
+        </div>
+
+        <div class="trace-readout" aria-live="polite">
+          <span class="readout-code" data-readout-code>REQ</span>
+          <div><b data-readout-title>需求成为权威源</b><p data-readout-copy>每条需求拥有稳定身份，研发、文档和测试围绕同一业务目标展开。</p></div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#why"><span>SCROLL TO TRACE</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <section class="statement-band" aria-label="产品主张">
+      <p>输入一句需求</p><span aria-hidden="true">→</span>
+      <p>AI 承担执行</p><span aria-hidden="true">→</span>
+      <p>系统留下证据</p><span aria-hidden="true">→</span>
+      <p class="accent">人负责验收</p>
+    </section>
+
+    <section class="section section-problem" id="why">
+      <div class="section-index reveal"><span>CONTEXT</span><b>01</b></div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE NEW BOTTLENECK</p>
+        <h2>速度不是瓶颈，<br><em>失联才是。</em></h2>
+        <p>AI 让代码生产变快，却没有自动解决需求、实现、文档和验证之间的断裂。代码越多，企业越难回答三个基本问题。</p>
+      </div>
+
+      <div class="fracture-map reveal" aria-label="研发交付中的三个断点">
+        <article class="fracture-card">
+          <div class="fracture-label">01 / WHY</div>
+          <h3>为什么这样实现？</h3>
+          <p>需求和设计依据散落在对话、文档与个人经验中，AI 生成的代码缺少可继承的业务上下文。</p>
+          <span>设计依据失联</span>
+        </article>
+        <article class="fracture-card fracture-card-dark">
+          <div class="fracture-label">02 / IMPACT</div>
+          <h3>改动影响了什么？</h3>
+          <p>一个接口发生变化，团队无法快速判断涉及哪些页面、数据、需求与回归范围。</p>
+          <span>影响范围失联</span>
+        </article>
+        <article class="fracture-card">
+          <div class="fracture-label">03 / PROOF</div>
+          <h3>如何证明做对了？</h3>
+          <p>测试往往在开发完成后重新理解需求，验证依据与研发过程无法形成同一条证据链。</p>
+          <span>交付证据失联</span>
+        </article>
+      </div>
+
+      <div class="problem-conclusion reveal">
+        <span>SHIFT /</span>
+        <p>企业真正缺少的不是另一个代码生成器，而是一套让 AI 研发过程可以被理解、检查和追溯的工程基础设施。</p>
+      </div>
+    </section>
+
+    <section class="section section-engine" id="engine">
+      <div class="section-index reveal"><span>ENGINE</span><b>02</b></div>
+      <div class="section-heading heading-wide reveal">
+        <p class="eyebrow">ONE REQUIREMENT, COMPLETE EVIDENCE</p>
+        <h2>一条需求，留下完整证据链。</h2>
+        <p>确定的信息交给程序提取，需要理解的语义交给 AI 补全。每个阶段都输出可复用的工程资产，而不是一次性对话。</p>
+      </div>
+
+      <ol class="pipeline reveal" aria-label="产品工作流程">
+        <li>
+          <span class="pipeline-no">01</span>
+          <div class="pipeline-icon" aria-hidden="true">⌁</div>
+          <h3>输入需求</h3>
+          <p>需求文档与现有代码共同成为调查入口。</p>
+          <small>REQ / SOURCE</small>
+        </li>
+        <li>
+          <span class="pipeline-no">02</span>
+          <div class="pipeline-icon" aria-hidden="true">⌘</div>
+          <h3>扫描实现</h3>
+          <p>提取接口、数据表、页面、任务与技术细节。</p>
+          <small>SCAN / EXTRACT</small>
+        </li>
+        <li>
+          <span class="pipeline-no">03</span>
+          <div class="pipeline-icon" aria-hidden="true">⌗</div>
+          <h3>构建图谱</h3>
+          <p>连接需求、实现、数据与用户体验。</p>
+          <small>FILL / CONNECT</small>
+        </li>
+        <li>
+          <span class="pipeline-no">04</span>
+          <div class="pipeline-icon" aria-hidden="true">✓</div>
+          <h3>形成验证</h3>
+          <p>生成测试用例、影响范围与交付依据。</p>
+          <small>TEST / PROVE</small>
+        </li>
+      </ol>
+
+      <div class="shift-strip reveal" aria-label="为什么叫左移">
+        <span class="shift-strip-tag">SL / SHIFT LEFT</span>
+        <p><b>这就是「左移」</b>——质量不再等到编码完成才被检验，而是从需求阶段就向前移动、贯穿全程，让验证与实现走同一条证据链。</p>
+      </div>
+
+      <div class="value-grid reveal">
+        <article>
+          <span>产品经理</span>
+          <h3>需求有据可查</h3>
+          <p>确认每条需求由哪些接口、页面和数据结构实现。</p>
+        </article>
+        <article>
+          <span>研发团队</span>
+          <h3>变更有图可依</h3>
+          <p>修改前看见影响范围，减少对隐性依赖的猜测。</p>
+        </article>
+        <article>
+          <span>测试团队</span>
+          <h3>验证有谱可循</h3>
+          <p>从需求和改动自动推导测试点与回归范围。</p>
+        </article>
+        <article>
+          <span>AI Agent</span>
+          <h3>执行有上下文</h3>
+          <p>获取精确、结构化、可查询的工程知识。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-scenarios" id="scenarios">
+      <div class="section-index reveal"><span>APPLICATIONS</span><b>03</b></div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">START WHERE THE PAIN IS REAL</p>
+        <h2>从最痛的一个环节切入。</h2>
+        <p>无需一次改造全部研发体系。ShiftLeft Engine 可以从一个新需求、一个遗留模块，或一次高风险变更开始。</p>
+      </div>
+
+      <div class="scenario-shell reveal">
+        <div class="scenario-tabs" role="tablist" aria-label="应用场景">
+          <button id="tab-ai" role="tab" aria-selected="true" aria-controls="panel-ai" data-scenario="ai">
+            <span>AI 原生研发</span><small>NEW BUILD</small>
+          </button>
+          <button id="tab-legacy" role="tab" aria-selected="false" aria-controls="panel-legacy" data-scenario="legacy" tabindex="-1">
+            <span>存量系统治理</span><small>LEGACY</small>
+          </button>
+          <button id="tab-regression" role="tab" aria-selected="false" aria-controls="panel-regression" data-scenario="regression" tabindex="-1">
+            <span>精准回归测试</span><small>CHANGE</small>
+          </button>
+          <button id="tab-delivery" role="tab" aria-selected="false" aria-controls="panel-delivery" data-scenario="delivery" tabindex="-1">
+            <span>复杂项目交付</span><small>DELIVERY</small>
+          </button>
+        </div>
+
+        <div class="scenario-panels">
+          <article id="panel-ai" role="tabpanel" aria-labelledby="tab-ai" data-panel="ai">
+            <p class="panel-kicker">SCENARIO / 01</p>
+            <h3>让多个 AI Agent 共享同一份工程事实</h3>
+            <p>需求、调查、计划、代码和测试结果持续回写知识库，降低多 Agent 协作中的上下文漂移与黑盒风险。</p>
+            <ul><li>需求驱动任务分解</li><li>工程上下文持续更新</li><li>执行结果可复查</li></ul>
+            <div class="panel-result"><span>结果</span><b>AI 速度被保留，交付依据不丢失。</b></div>
+          </article>
+          <article id="panel-legacy" role="tabpanel" aria-labelledby="tab-legacy" data-panel="legacy" hidden>
+            <p class="panel-kicker">SCENARIO / 02</p>
+            <h3>从代码反向重建长期缺失的系统知识</h3>
+            <p>扫描接口、数据表、页面和后台任务，为缺少文档的历史项目快速建立可查询的工程地图。</p>
+            <ul><li>存量代码反向扫描</li><li>模块文档骨架生成</li><li>业务关系逐步补齐</li></ul>
+            <div class="panel-result"><span>结果</span><b>新成员与 AI 更快理解历史系统。</b></div>
+          </article>
+          <article id="panel-regression" role="tabpanel" aria-labelledby="tab-regression" data-panel="regression" hidden>
+            <p class="panel-kicker">SCENARIO / 03</p>
+            <h3>让每次回归测试都有明确范围</h3>
+            <p>根据代码变更映射图谱节点，识别受影响的需求、接口、页面和数据，形成针对性的测试计划。</p>
+            <ul><li>Git 变更映射</li><li>两跳影响分析</li><li>测试用例范围识别</li></ul>
+            <div class="panel-result"><span>结果</span><b>从“凭经验全量回归”转向“按影响验证”。</b></div>
+          </article>
+          <article id="panel-delivery" role="tabpanel" aria-labelledby="tab-delivery" data-panel="delivery" hidden>
+            <p class="panel-kicker">SCENARIO / 04</p>
+            <h3>把复杂项目交付变成一条可验收证据链</h3>
+            <p>跨团队、跨供应商的研发活动围绕统一需求身份协作，降低人员更替和信息断层带来的交付风险。</p>
+            <ul><li>统一需求与资产编号</li><li>跨角色追溯查询</li><li>结构化交付报告</li></ul>
+            <div class="panel-result"><span>结果</span><b>项目过程能解释，最终结果能验收。</b></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-partners" id="partners">
+      <div class="section-index reveal"><span>ECOSYSTEM</span><b>04</b></div>
+      <div class="section-heading heading-wide reveal">
+        <p class="eyebrow">CONNECT, DON'T REPLACE</p>
+        <h2>连接现有工具，共同完成最后一公里。</h2>
+        <p>我们提供工程知识与追溯底座；合作伙伴带来客户场景、行业知识、执行工具与交付网络。</p>
+      </div>
+
+      <div class="ecosystem reveal" aria-label="合作伙伴生态图">
+        <div class="ecosystem-orbit orbit-one" aria-hidden="true"></div>
+        <div class="ecosystem-orbit orbit-two" aria-hidden="true"></div>
+        <div class="ecosystem-core">
+          <span>TRACEABILITY<br>CORE</span>
+          <b>SL</b>
+          <small>知识 · 图谱 · 验证</small>
+        </div>
+        <article class="partner-node partner-ai"><small>01</small><b>AI 开发平台</b><span>补齐质量与追溯闭环</span></article>
+        <article class="partner-node partner-qa"><small>02</small><b>测试服务商</b><span>获得结构化用例与范围</span></article>
+        <article class="partner-node partner-devops"><small>03</small><b>DevOps 厂商</b><span>连接部署与交付证据</span></article>
+        <article class="partner-node partner-si"><small>04</small><b>系统集成商</b><span>形成标准交付方案</span></article>
+        <article class="partner-node partner-domain"><small>05</small><b>行业伙伴</b><span>注入规则与验收知识</span></article>
+      </div>
+
+      <p class="ecosystem-note reveal">ShiftLeft Engine 不要求客户推倒重来。它位于需求管理、代码仓库、AI 开发、测试执行与 DevOps 之间，补齐原本缺失的关系。</p>
+
+      <div class="puzzle-note reveal">
+        <span class="puzzle-tag">WHY OPEN SOURCE</span>
+        <h3>轮子已经给到，整列「火车」等你一起拼。</h3>
+        <p>我们把「测试左移工程平台」这列火车拆成一张张可独立安装的拼图——本期已交付最底层的工程能力（<b>27 个 <code>gsd-kb-*</code> 技能 + 零依赖 Python 引擎</b>），每一块都能独立使用、直接上手。真正想拼整列火车的人，从这些轮子出发，就是上车最快的路。</p>
+      </div>
+    </section>
+
+    <section class="section section-proof" id="proof">
+      <div class="section-index reveal"><span>EVIDENCE</span><b>05</b></div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">WORKING CORE, OPEN WINDOW</p>
+        <h2>方向已经跑通，<br><em>生态正在形成。</em></h2>
+        <p>核心能力已经可运行；产品仍处于适合合作伙伴共同定义行业方案、执行连接和商业模式的阶段。</p>
+      </div>
+
+      <div class="honesty reveal" aria-label="诚实性原则">
+        <div class="honesty-copy">
+          <p class="eyebrow">HONESTY BY DESIGN</p>
+          <h3>先证明「需求实现了」，<br>再讨论「做得更好」。</h3>
+          <p>测试左移有一道关键纪律：<b>需求没说的，不测</b>。严格对齐需求的测试首次通过率约 95%；自由发挥式追求质量的测试首次通过率约 70%，应单独成阶段——缺了这一条，就会出现「测了很多，却没证明需求」。而验证，必须始于需求、止于证据。</p>
+        </div>
+        <div class="honesty-cards">
+          <article class="honesty-card">
+            <span>忠于需求</span>
+            <b><em>95</em>%</b>
+            <p>严格对齐需求原文，先证明实现成立</p>
+            <small>TRUTH-FIRST / STRICT SCOPE</small>
+          </article>
+          <article class="honesty-card honesty-card-dark">
+            <span>追求质量</span>
+            <b><em>70</em>%</b>
+            <p>边界、异常、性能单独开一轮，不与需求验收混淆</p>
+            <small>QUALITY-MAX / OPTIONAL PASS</small>
+          </article>
+        </div>
+      </div>
+
+      <div class="evidence-board reveal">
+        <div class="evidence-main">
+          <p>内部完整流水线验证</p>
+          <strong><span>130</span> AGENTS</strong>
+          <div class="evidence-sub"><b>61 MIN</b><b>STATUS / DONE</b></div>
+          <small>编码前调查 → 开发 → 文档 / 图谱 → 部署 → 冒烟 → UAT → 报告　<i class="evidence-intern">完整产品愿景 · 内部实测</i></small>
+        </div>
+        <div class="evidence-cell"><span>31</span><p>示例图谱节点</p></div>
+        <div class="evidence-cell"><span>86</span><p>示例追溯关系</p></div>
+        <div class="evidence-cell evidence-text"><span>RUNNABLE</span><p>Python 引擎、CLI、离线图谱已可运行</p></div>
+      </div>
+
+      <div class="scope-grid reveal">
+        <article>
+          <div class="scope-tag scope-now">NOW / 当前可验证</div>
+          <h3>知识与追溯工程层</h3>
+          <ul>
+            <li>十维工程知识库</li>
+            <li>双向追溯与影响分析</li>
+            <li>API / UI / E2E 用例生成</li>
+            <li>CLI 与 MCP 接入基础</li>
+          </ul>
+        </article>
+        <article>
+          <div class="scope-tag scope-next">NEXT / 合作共建</div>
+          <h3>完整执行与行业解决方案</h3>
+          <ul>
+            <li>端到端自动编排</li>
+            <li>真实测试执行集群</li>
+            <li>部署、修复和报告闭环</li>
+            <li>行业规则与商业化交付</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="proof-note reveal">说明：130 Agent / 61 分钟来自项目内部完整流程实测记录；31 节点 / 86 关系来自仓库示例知识库的本地运行结果，不作为客户收益数据。</p>
+
+      <div class="proof-media reveal" aria-label="真实运行证据">
+        <div class="proof-media-head">
+          <p class="eyebrow">SEE IT RUN</p>
+          <h3>一次完整流水线的真实现场。</h3>
+          <p>点击观看完整演示视频，见真实运行截图。<em class="hint">提示：若画面模糊，请在 YouTube 播放器内把画质调到 1080P（360P 看不清）。</em></p>
+        </div>
+        <a class="proof-video" href="https://youtu.be/stfLoSjn8Go" target="_blank" rel="noreferrer" aria-label="观看完整演示视频">
+          <span class="proof-play" aria-hidden="true">▶</span>
+          <div><b>完整演示视频 · 130 Agent 全链路</b><small>1h01m · 需求 → 开发 → 文档 → 图谱 → 部署 → 冒烟 → UAT → 报告</small></div>
+        </a>
+        <div class="proof-thumbs">
+          <figure>
+            <img src="assets/thumb-kb.jpg" alt="知识库与双向追溯图谱运行界面" loading="lazy" decoding="async">
+            <figcaption>10 维知识库 + 双向追溯图谱</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/thumb-uat.jpg" alt="真实 UAT 测试执行界面" loading="lazy" decoding="async">
+            <figcaption>真实 UAT 测试执行</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/thumb-report.jpg" alt="结构化交付报告界面" loading="lazy" decoding="async">
+            <figcaption>结构化交付报告</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="pilot" id="pilot">
+      <div class="pilot-grid" aria-hidden="true"></div>
+      <div class="pilot-copy reveal">
+        <p class="eyebrow">START SMALL. PROVE SOMETHING REAL.</p>
+        <h2>从一个真实模块开始。</h2>
+        <p>不先讨论庞大的合作协议。选择一个业务模块、一条真实需求和一套现有代码，共同跑通一次可信交付闭环。</p>
+      </div>
+
+      <ol class="pilot-steps reveal">
+        <li><span>01</span><div><b>选择场景</b><p>一个边界清晰、确实存在交付痛点的业务模块。</p></div></li>
+        <li><span>02</span><div><b>联合验证</b><p>生成知识库、追溯图谱、影响范围和测试用例。</p></div></li>
+        <li><span>03</span><div><b>评估合作</b><p>共同评估准确性、接入成本与行业复制价值。</p></div></li>
+      </ol>
+
+      <div class="pilot-action reveal">
+        <button class="button button-light" type="button" data-open-pilot>查看联合验证清单 <span aria-hidden="true">↗</span></button>
+        <p>适合拥有客户场景、测试能力、AI 平台或行业知识的伙伴。<br><a class="contact-link" href="mailto:wanglikai201101@gmail.com">wanglikai201101@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#top">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+      <span class="brand-copy"><b>SHIFTLEFT</b><small>ENGINE / 左移·来福</small></span>
+    </a>
+    <p>让 AI 研发可理解、可验证、可追溯。</p>
+    <div class="footer-links">
+      <a href="mailto:wanglikai201101@gmail.com">联系合作 ↗</a>
+      <a href="https://github.com/wanglikai201101-ctrl/shiftleft-engine" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href="#top">返回顶部 ↑</a>
+    </div>
+  </footer>
+
+  <dialog class="pilot-dialog" data-pilot-dialog aria-labelledby="dialog-title">
+    <div class="dialog-top">
+      <span>JOINT VALIDATION / 001</span>
+      <button type="button" data-close-pilot aria-label="关闭">×</button>
+    </div>
+    <div class="dialog-body">
+      <p class="eyebrow">合作起点</p>
+      <h2 id="dialog-title">用一个真实模块，验证一次真实价值。</h2>
+      <p>建议双方各指定一名业务与技术负责人，准备以下材料：</p>
+      <ul>
+        <li><span>01</span>一条真实、边界清晰的业务需求</li>
+        <li><span>02</span>与需求相关的前后端代码范围</li>
+        <li><span>03</span>当前测试方式与主要交付痛点</li>
+        <li><span>04</span>双方认可的准确性与可用性标准</li>
+      </ul>
+      <div class="dialog-actions">
+        <button class="button button-primary dialog-copy" type="button" data-copy-pilot>复制联合验证清单</button>
+        <a class="button button-ghost dialog-email" href="mailto:wanglikai201101@gmail.com?subject=ShiftLeft%20Engine%20合作咨询">发送合作邮件</a>
+      </div>
+      <p class="dialog-contact">联系方式：<a href="mailto:wanglikai201101@gmail.com">wanglikai201101@gmail.com</a></p>
+      <p class="copy-status" data-copy-status aria-live="polite"></p>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
